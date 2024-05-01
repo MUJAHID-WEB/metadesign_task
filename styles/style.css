@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body {
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.table {
+  border: 3px solid #368ecb;
+  border-radius: 10px;
+}
+.table .theading {
+  font-size: 25px;
+  color: #727117;
+}
+.table .button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.table .plus-btn {
+  background-color: #ebebeb;
+  border-radius: 50%;
+}
+.table .plus-icon {
+  color: #c5c351;
+}
+.table td {
+  border-top: 1px solid #e1e1e1;
+  padding: 10px;
+}
+.table td .name {
+  font-size: 22px;
+  color: #000;
+}
+.table td .dobnick {
+  font-size: 15px;
+  color: #bbbbbb;
+}
+.table td .button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.table td .align-center {
+  align-items: center;
+}
+.table td .tick {
+  font-size: 30px;
+  color: #bdbb34;
+  padding-right: 20px;
+}
+.table td .dots {
+  font-size: 30px;
+  color: #6c6e0d;
+  padding-right: 10px;
+}
+.table td .btn-transparent {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.table td .dropdown-menu {
+  border: 3px solid #368ecb;
+  border-radius: 10px;
+}
+.table td .mark-as-done {
+  border-bottom: 1px solid #cbc9c9;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.modal .modal.show {
+  display: block;
+}
+.modal .modal-header {
+  background-color: #bdbb34;
+  color: #fff;
+}
+.modal .modal-header button span {
+  color: #fff;
+}
+.modal .modal-body {
+  padding: 20px;
+}
+.modal .modal-body .btmborder {
+  border: none;
+  border-bottom: 2px solid #e1e1e1;
+}
+.modal .modal-body input::-moz-placeholder {
+  color: #999;
+}
+.modal .modal-body input::placeholder {
+  color: #999;
+}
+.modal .modal-body .modal-footer {
+  border: none;
+}
+.modal .modal-body .modal-footer .btn-save {
+  background-color: #6d6d0d;
+  color: #fff;
+  margin-left: 20px;
+}
+.modal .modal-body .modal-footer .btn-cancel {
+  background-color: transparent;
+  border: 2px solid #6d6d0d;
+  color: #6d6d0d;
+}/*# sourceMappingURL=style.css.map */

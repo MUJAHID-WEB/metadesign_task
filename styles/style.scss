@@ -1,0 +1,151 @@
+// Import Google font
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+// Variable declarations
+$primary-color: #007bff;
+$secondary-color: #6d6d0d;
+$light-border-color: #e1e1e1;
+$dark-border-color: #368ecb;
+$highlight-color: #bdbb34;
+$light-text-color: #999;
+$dark-text-color: #000;
+$transparent-bg-color: #ebebeb;
+$transparent-border-color: transparent;
+$transparent-text-color: #c5c351;
+$dark-text-color-highlight: #6c6e0d;
+$light-text-color-highlight: #bbbbbb;
+
+// SCSS styles
+body {
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.table {
+  border: 3px solid $dark-border-color;
+  border-radius: 10px;
+
+  .theading {
+    font-size: 25px;
+    color: #727117;
+  }
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .plus-btn {
+    background-color: $transparent-bg-color;
+    border-radius: 50%;
+  }
+
+  .plus-icon {
+    color: $transparent-text-color;
+  }
+
+  td {
+    border-top: 1px solid $light-border-color;
+    padding: 10px;
+
+    .name {
+      font-size: 22px;
+      color: $dark-text-color;
+    }
+
+    .dobnick {
+      font-size: 15px;
+      color: $light-text-color-highlight;
+    }
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .align-center {
+      align-items: center;
+    }
+
+    .tick {
+      font-size: 30px;
+      color: #bdbb34;
+      padding-right: 20px;
+    }
+
+    .dots {
+      font-size: 30px;
+      color: $dark-text-color-highlight;
+      padding-right: 10px;
+    }
+
+    .btn-transparent {
+      background-color: transparent !important;
+      border-color: transparent !important;
+    }
+
+    .dropdown-menu {
+      border: 3px solid $dark-border-color;
+      border-radius: 10px;
+    }
+
+    .mark-as-done {
+      border-bottom: 1px solid #cbc9c9;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  .modal.show {
+    display: block;
+  }
+  .modal-header {
+    background-color: $highlight-color;
+    color: #fff;
+    button span {
+      color: #fff;
+    }
+  }
+  .modal-body {
+    padding: 20px;
+    .btmborder {
+      border: none;
+      border-bottom: 2px solid $light-border-color;
+    }
+    input::placeholder {
+      color: $light-text-color;
+    }
+    .modal-footer {
+      border: none;
+      .btn-save {
+        background-color: $secondary-color;
+        color: #fff;
+        margin-left: 20px;
+      }
+      
+      .btn-cancel {
+        background-color: transparent;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
+      }
+    }
+   
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
